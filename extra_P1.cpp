@@ -6,7 +6,7 @@ tidB 2
 tidA 3
 tidB 4 …
 
-One possible solution using two functions: 
+One possible solution is by using two functions: 
 */
 
 #include <iostream>
