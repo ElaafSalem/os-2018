@@ -1,3 +1,15 @@
+/* 
+Question: Use MUTEXT to increment the global variable once, then pass it to the next thread and so on, 
+the output should be something as the following:
+tidA 1
+tidB 2
+tidA 3
+tidB 4 …
+
+One possible solution is by locking and unlocking the thread on each loop and then delying the current 
+thread to allow the second to acquire the lock.
+*/
+
 #include <iostream>
 #include <unistd.h>
 #include "pthread.h"
